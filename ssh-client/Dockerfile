@@ -2,4 +2,5 @@
 FROM alpine:3.11
 LABEL maintainer="tech@katomaran.com"
 
-RUN apk add --no-cache openssh-client ca-certificates bash
+RUN apk add --no-cache openssh-client ca-certificates bash curl
+RUN rm -rf /var/cache/apk/*
